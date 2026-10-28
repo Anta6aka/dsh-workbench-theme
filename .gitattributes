@@ -1,0 +1,6 @@
+# Font provenance hashes in docs/fonts/sources.json are computed over the exact
+# bytes served by Google Fonts (LF CSS, binary WOFF2, OFL text). Keep those
+# files byte-stable on every platform so brand-fonts.test.mjs can verify them.
+*.woff2 binary
+docs/fonts/*.txt -text
+docs/fonts/*.source.css -text

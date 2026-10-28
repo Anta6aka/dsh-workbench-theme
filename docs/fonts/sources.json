@@ -1,0 +1,43 @@
+{
+  "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+  "fonts": [
+    {
+      "family": "Noto Serif SC",
+      "alias": "Workbench Display Serif",
+      "query": "Noto Serif SC:wght@600",
+      "style": "normal",
+      "weight": 600,
+      "text": "比护的 AI 工作台 Bihu AI Workbench",
+      "filename": "bihu-display-serif-600.woff2",
+      "license_filename": "NotoSerifSC-OFL.txt",
+      "license_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/notoserifsc/OFL.txt",
+      "source_url": "https://github.com/google/fonts/tree/main/ofl/notoserifsc",
+      "api_url": "https://fonts.googleapis.com/css2?family=Noto+Serif+SC%3Awght%40600&display=swap&text=%E6%AF%94%E6%8A%A4%E7%9A%84+AI+%E5%B7%A5%E4%BD%9C%E5%8F%B0+Bihu+AI+Workbench",
+      "font_url": "https://fonts.gstatic.com/l/font?kit=H4cyBXePl9DZ0Xe7gG9cyOj7uK2-n-D2rd4FY7RcrCWq847hdT2Cc2fqwRmCgoXnBt0AyTwmPxv2VEPv9LGWyWTZOrc2rTxvQWY&skey=37fe335b8fd815cc&v=v35",
+      "unicode_range": "U+20, U+41-42, U+49, U+57, U+62-63, U+65, U+68-69, U+6b, U+6e-6f, U+72, U+75, U+4f5c, U+53f0, U+5de5, U+62a4, U+6bd4, U+7684",
+      "bytes": 3304,
+      "sha256": "89cdd4aa71c51b7ab0b1c940fd71d43b4ecd3e0aea66efafd9a0aa5379e6f350",
+      "license_sha256": "5e0da210fb04058a8c0087985d2d456b931c2579811a49655721d3cf0c36b6d6",
+      "css_sha256": "b30570a44aa75b2b20dbbb61f194f34e7b5dcab9570d29c5ec90e0e9774b8398"
+    },
+    {
+      "family": "Cormorant Garamond",
+      "alias": "Workbench Signature",
+      "query": "Cormorant Garamond:ital,wght@1,600",
+      "style": "italic",
+      "weight": 600,
+      "text": "AI Ai Haibara",
+      "filename": "haibara-signature-600-italic.woff2",
+      "license_filename": "CormorantGaramond-OFL.txt",
+      "license_url": "https://raw.githubusercontent.com/google/fonts/main/ofl/cormorantgaramond/OFL.txt",
+      "source_url": "https://github.com/google/fonts/tree/main/ofl/cormorantgaramond",
+      "api_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond%3Aital%2Cwght%401%2C600&text=AI+Ai+Haibara&display=swap",
+      "font_url": "https://fonts.gstatic.com/l/font?kit=co3smX5slCNuHLi8bLeY9MK7whWMhyjYrGFEsdtdc62E6zd5LDfOitk9IfqxUY70okkYVrjAjZw&skey=e666f2218a05acfc&v=v21",
+      "unicode_range": "U+20, U+41, U+48-49, U+61-62, U+69, U+72",
+      "bytes": 1744,
+      "sha256": "3ab8e9094fc2b5ebf6b86fbd1dd04679d20c06d342a2b5d4c31d60303f76627d",
+      "license_sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "css_sha256": "2492fd65b84a52c3e0a29d40dcf1325e3baf36c6249d0675599ffb0cea9a2ea9"
+    }
+  ]
+}

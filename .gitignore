@@ -1,0 +1,31 @@
+node_modules/
+dist/
+release/
+*.tgz
+*.log
+.DS_Store
+
+
+# local pet assets (source GIFs + converted webm, kept out of git to avoid binary bloat)
+/pet-data/
+/assets/haibara-stickers/
+
+# local TTS cache
+/pet-engine/.voice/
+
+# pet engine debug traces
+/pet-engine/.trace/
+/pet-engine/.recent-lines.json
+
+/pet-engine/.chat-history.json
+
+/pet-engine/.auto-speech.json
+
+/pet-engine/.companion.pid
+
+/pet-engine/logs/
+
+/pet-engine/.auth-token
+
+/media-captures/
+

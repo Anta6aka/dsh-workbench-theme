@@ -1,0 +1,77 @@
+{
+  "name": "dsh-workbench-theme",
+  "version": "1.4.0-custom.4",
+  "description": "Restrained local build of the Haibara workbench appearance for official DeepSeek Harness",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./client": "./dist/client.js",
+    "./package.json": "./package.json",
+    "./contracts": "./docs/contracts.d.ts",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "dist",
+    "locale",
+    "docs",
+    "cordis.patch.yml",
+    "README.md",
+    "THIRD_PARTY_NOTICES.md",
+    "NOTICE.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "screenshots.json",
+    "media/*.jpg",
+    "media/SOURCES.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh": "0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.3",
+    "@deepseek-ai/schemastery": "^3.18.2"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/client.mjs && node --check src/index.mjs && node --check src/artwork-projection.mjs && node --check src/title-motion.mjs && node --check src/appearance-state.mjs",
+    "test": "node --test test/*.test.mjs",
+    "test:client": "node scripts/test-client.mjs",
+    "smoke:auth": "node scripts/smoke-local-auth.mjs",
+    "prune:attachments": "node scripts/prune-attachments.mjs",
+    "seed:zones": "node scripts/seed-project-zones.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "react": "18.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucky01222/dsh-workbench-theme.git"
+  },
+  "homepage": "https://github.com/lucky01222/dsh-workbench-theme#readme",
+  "bugs": {
+    "url": "https://github.com/lucky01222/dsh-workbench-theme/issues"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "theme"
+  ],
+  "engines": {
+    "node": ">=24",
+    "dsh": "0.1.7-rc.2 || 0.2.0-rc.2 || 0.2.1-rc.3"
+  }
+}

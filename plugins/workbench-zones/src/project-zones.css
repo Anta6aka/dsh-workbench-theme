@@ -1,0 +1,28 @@
+.wbProjectTrigger{display:inline-flex;align-items:center;gap:4px;height:26px;padding:0 8px;border:1px solid var(--dsw-alias-border-l2);border-radius:7px;background:var(--dsw-alias-bg-layer-1);color:var(--dsw-alias-label-secondary);font:inherit;font-size:11px;cursor:pointer}
+.wbProjectTrigger:hover{background:var(--dsw-alias-interactive-bg-hover-solid);color:var(--dsw-alias-label-primary)}
+.wbProjectTrigger i{display:inline-flex;align-items:center;justify-content:center;min-width:14px;height:14px;padding:0 3px;border-radius:999px;background:var(--dsw-alias-brand-primary);color:#fff;font-style:normal;font-size:9px;line-height:1}
+.wbProjectZones{position:fixed;left:22px;bottom:72px;z-index:2147483200;width:min(520px,calc(100vw - 28px));max-height:min(680px,82vh);display:flex;flex-direction:column;border:1px solid var(--dsw-alias-border-l2);border-radius:14px;background:var(--dsw-alias-bg-overlay);box-shadow:0 18px 46px #1c15202e;color:var(--dsw-alias-label-primary);overflow:hidden}
+.wbProjectZones>header{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;padding:11px 13px 9px;border-bottom:.5px solid var(--dsw-alias-border-l2)}
+.wbProjectZones>header>div{display:flex;flex-direction:column;gap:2px}
+.wbProjectZones>header b{font-size:13px}
+.wbProjectZones>header span{color:var(--dsw-alias-label-tertiary);font-size:10px}
+.wbProjectZones>header button{border:0;background:transparent;color:var(--dsw-alias-label-secondary);font-size:18px;line-height:1;cursor:pointer;padding:0 2px}
+.wbProjectZones>nav{display:flex;gap:3px;padding:8px 10px 6px;border-bottom:.5px solid var(--dsw-alias-border-l2);overflow:auto}
+.wbProjectZones>nav button{display:inline-flex;align-items:center;gap:4px;flex:none;height:26px;padding:0 7px;border:1px solid transparent;border-radius:7px;background:transparent;color:var(--dsw-alias-label-tertiary);font:inherit;font-size:11px;cursor:pointer}
+.wbProjectZones>nav button[data-on=true]{background:var(--dsw-alias-bg-layer-1);border-color:var(--dsw-alias-border-l2);color:var(--dsw-alias-label-primary)}
+.wbProjectZones>nav small{font-size:9px;color:var(--dsw-alias-label-tertiary)}
+.wbProjectList{display:flex;flex-direction:column;gap:7px;min-height:140px;max-height:390px;padding:10px 12px;overflow:auto}
+.wbProjectList>p{margin:auto;color:var(--dsw-alias-label-tertiary);font-size:11px;text-align:center}
+.wbProjectList article{padding:8px 9px;border:1px solid var(--dsw-alias-border-l2);border-radius:9px;background:var(--dsw-alias-bg-layer-1)}
+.wbProjectList article strong{display:block;font-size:12px;line-height:1.45;overflow-wrap:anywhere}
+.wbProjectList article small{display:block;margin-top:4px;color:var(--dsw-alias-label-tertiary);font-size:9px}
+.wbProjectList article footer{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:5px;margin-top:6px;color:var(--dsw-alias-label-tertiary);font-size:9px}
+.wbProjectList article footer button{height:22px;border:1px solid var(--dsw-alias-border-l2);border-radius:6px;background:var(--dsw-alias-bg-overlay);color:var(--dsw-alias-label-tertiary);font:inherit;font-size:9px;padding:0 5px;cursor:pointer}
+.wbProjectList article footer button:hover{color:var(--dsw-alias-label-primary)}
+.wbProjectZones>form{display:flex;gap:6px;padding:9px 11px;border-top:.5px solid var(--dsw-alias-border-l2)}
+.wbProjectZones>form input{flex:1;min-width:0;height:30px;border:1px solid var(--dsw-alias-border-l2);border-radius:8px;background:var(--dsw-alias-bg-layer-1);color:var(--dsw-alias-label-primary);font:inherit;font-size:12px;padding:0 8px;outline:none}
+.wbProjectZones>form input:focus{border-color:var(--dsw-alias-brand-primary)}
+.wbProjectZones>form button{height:30px;padding:0 11px;border:0;border-radius:8px;background:var(--dsw-alias-brand-primary);color:#fff;font:inherit;font-size:11px;cursor:pointer}
+.wbProjectZones>form button:disabled{opacity:.45;cursor:default}
+.wbProjectHint{margin:0;padding:0 11px 9px;color:var(--dsw-alias-label-tertiary);font-size:9px;line-height:1.4}
+@media(max-width:760px){.wbProjectZones{left:12px;bottom:12px;max-height:82vh}}

@@ -1,0 +1,72 @@
+.wbAppearance{display:flex;flex-direction:column;gap:0;padding:0 0 var(--wb-space-2);border-bottom:.5px solid var(--dsw-alias-border-l2);font-size:14px;color:var(--dsw-alias-label-primary)}
+.wbAppearanceRow{display:flex;align-items:center;justify-content:space-between;gap:var(--wb-space-4);min-height:62px;padding:var(--wb-space-2) 0;box-sizing:border-box}
+.wbAppearance fieldset{display:flex;gap:var(--wb-space-2);border:0;padding:0;margin:0;min-width:0;flex-wrap:wrap}
+.wbAppearance fieldset button{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:32px;padding:5px 11px;border:1px solid var(--dsw-alias-border-l2);border-radius:var(--wb-radius-sm);font:inherit;font-size:12px;line-height:20px;color:inherit;background:var(--dsw-alias-bg-layer-1);cursor:pointer}
+.wbAppearance fieldset button:hover{background:var(--dsw-alias-interactive-bg-hover-solid)}
+.wbAppearance fieldset button[aria-pressed=true]{border-color:var(--dsw-alias-brand-primary);background:var(--dsw-alias-interactive-bg-active)}
+.wbAppearance fieldset:disabled button{cursor:default;opacity:.5}
+.wbAppearance fieldset button:focus-visible{outline:2px solid var(--dsw-alias-link);outline-offset:2px}
+.wbThemeChoiceArt{width:27px;height:30px;position:relative;overflow:hidden;pointer-events:none}
+.wbThemeChoiceArt .wb-art-corner{height:30px}
+.wbThemeChoiceArt .wb-art-corner-frame{display:none}
+.wbThemeChoiceArt .wb-art-corner-figure{top:0;right:0;width:27px;height:30px}
+.wbThemeChoiceArt .wb-art-corner-figure img{height:56px;right:0;filter:none}
+.wbAppearanceHint{margin:var(--wb-space-2) 0;color:var(--dsw-alias-label-secondary);font-size:12px;line-height:20px}
+.wbAppearanceError{color:var(--dsw-alias-state-error-primary);margin:0;font-size:12px}
+.wbVisuallyHidden{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+/* Surface material: ambient light lives on the frame/hero; the chat reading area stays clean. */
+body[data-workbench-theme][data-dsh-theme=haibara] [data-workbench-frame]{background-color:var(--dsw-alias-bg-base);background-image:var(--wb-ambient-wash);background-attachment:fixed;background-repeat:no-repeat}
+body[data-workbench-theme][data-dsh-theme=haibara] [data-workbench-frame] > [class*='_centerCol']{background-color:var(--dsw-alias-bg-base);background-image:var(--wb-ambient-wash);background-attachment:fixed;background-repeat:no-repeat}
+body[data-workbench-theme][data-dsh-theme=haibara] [data-slot=sidebar],
+body[data-workbench-theme][data-dsh-theme=haibara] [data-slot=sidebar] > [class*='_root']{background-color:var(--dsw-specific-sidebar-fill);background-image:linear-gradient(180deg,color-mix(in srgb,var(--wb-ambient-1) 18%,transparent),transparent 46%,color-mix(in srgb,var(--wb-ambient-3) 12%,transparent));background-attachment:fixed}
+body[data-workbench-theme][data-workbench-shell][data-dsh-theme=haibara] [data-slot=sidebar] > [class*='_root']{background:linear-gradient(90deg,var(--wb-rail) 0,var(--wb-rail) 56px,var(--dsw-theme-sidebar-surface) 56px)}
+body[data-workbench-theme][data-dsh-theme=haibara] [data-slot='conversation.header']{background:transparent}
+body[data-workbench-theme][data-dsh-theme=haibara] [data-slot='conversation.header'] > [class*='_header']{background:var(--dsw-theme-header)}
+body[data-workbench-theme][data-dsh-theme=haibara] [data-slot=main] > [class*='_root'],
+body[data-workbench-theme][data-dsh-theme=haibara] [data-slot=main] > [data-slot^='main.'] > [class*='_root']{background:var(--dsw-theme-conversation-surface)}
+/* Only the new-session hero carries ambient light in the main panel; the transcript stays flat. */
+body[data-workbench-theme][data-dsh-theme=haibara] [data-slot=main] > [class*='_root'][data-phase=hero],
+body[data-workbench-theme][data-dsh-theme=haibara] [data-slot=main] > [data-slot^='main.'] > [class*='_root'][data-phase=hero]{background-color:var(--dsw-theme-conversation-surface);background-image:var(--wb-ambient-wash);background-attachment:fixed;background-repeat:no-repeat}
+/* Studio 1.8.4 document chrome uses sidebar/base tokens; scope their surface roles to this bar, including its empty state. */
+body[data-workbench-theme] [data-slot=main] [class*='_documentBar']{background:var(--dsw-theme-application-surface);--dsw-alias-bg-base:var(--dsw-theme-panel-surface);--dsw-alias-border-l3:var(--dsw-alias-border-l2)}
+@media(max-width:680px){.wbAppearanceRow{gap:12px;align-items:flex-start;flex-direction:column}.wbAppearanceRow:has([role=switch]){flex-direction:row;align-items:center}}
+
+body[data-workbench-theme] [data-composer-card]{background:var(--dsw-theme-composer-surface);box-shadow:var(--dsw-theme-composer-shadow)}
+.wbStrengthBars{display:inline-flex;align-items:flex-end;gap:2px;height:12px}
+.wbStrengthBars i{width:3px;border-radius:1px;background:currentColor;opacity:.22}
+.wbStrengthBars i:nth-child(1){height:5px}.wbStrengthBars i:nth-child(2){height:8px}.wbStrengthBars i:nth-child(3){height:12px}
+.wbStrengthBars-soft i:nth-child(1){opacity:.9}
+.wbStrengthBars-clear i:nth-child(1),.wbStrengthBars-clear i:nth-child(2){opacity:.9}
+.wbStrengthBars-vivid i{opacity:.9}
+.wbTitleMotionCanvas{position:absolute;left:0;top:0;display:none;pointer-events:none;max-width:none}
+.wbAppearanceArtwork{position:relative;height:74px;display:flex;align-items:center;gap:var(--wb-space-3);margin:var(--wb-space-1) 0 var(--wb-space-2);padding-right:190px;border-bottom:1px solid var(--dsw-alias-border-l2)}
+.wbAppearanceArtwork>[data-workbench-title]{font-size:14px;font-weight:500;white-space:nowrap}
+.wbAppearanceArtwork>.wb-art-silver-sleepy{position:absolute;right:4px;top:-6px;width:176px;height:79px;pointer-events:none}
+.wbAppearanceArtwork .wb-art-foil{inset:7px 0;transform:rotate(-5deg)}
+.wbThemeChoiceArt .wb-art-lettering,.wbThemeChoiceArt .wb-art-cutout-frame{display:none}
+.wbThemeChoiceArt .wb-art-cutout-figure{top:0;right:0;width:27px;height:30px;left:auto}
+.wbThemeChoiceArt .wb-art-cutout-figure img{height:56px;filter:none;left:50%}
+.wbArtworkLibrary{border-top:1px solid var(--dsw-alias-border-l2);padding:var(--wb-space-3) 0 var(--wb-space-2);font-size:12px}
+.wbArtworkLibrary>summary{cursor:pointer;color:var(--dsw-alias-label-secondary);width:fit-content}
+.wbArtworkLibrary>summary:focus-visible{outline:2px solid var(--dsw-alias-link);outline-offset:3px}
+.wbArtworkLibraryGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--wb-space-4);margin:var(--wb-space-4) 0}
+.wbArtworkLibraryGrid figure{min-width:0;margin:0}
+.wbArtworkLibraryGrid figure>div{height:157px;position:relative;overflow:hidden;background:var(--dsw-alias-bg-layer-1);border:1px solid var(--dsw-alias-border-l2)}
+.wbArtworkLibraryGrid figcaption{font-size:11px;color:var(--dsw-alias-label-secondary);padding-top:7px}
+.wbArtworkLibraryGrid .wb-art-cutout{height:155px}
+.wbArtworkLibraryGrid .wb-art-cutout-figure{width:125px;right:0;top:0;height:156px}
+.wbArtworkLibraryGrid .wb-art-cutout-figure img{height:250px}
+.wbArtworkLibraryGrid .wb-art-cutout-frame{top:62px;left:3px;right:5px;height:70px}
+.wbArtworkLibraryGrid .wb-art-lettering{left:2px;top:18px;font-size:24px}
+.wbArtworkLibraryGrid .wb-art-corner{height:155px}
+.wbArtworkLibraryGrid .wb-art-corner-figure{height:155px;width:125px}
+.wbArtworkLibraryGrid .wb-art-corner-frame>span{font-size:24px}
+.wbArtworkLibraryGrid :is(.wb-art-silver-calm,.wb-art-silver-sleepy,.wb-art-silver-cheerful,.wb-art-silver-cinema){height:147px}
+.wbTitleReplay{min-height:28px;padding:4px 9px;border:1px solid var(--dsw-alias-border-l2);border-radius:var(--wb-radius-sm);background:var(--dsw-alias-bg-layer-1);color:var(--dsw-alias-label-primary);font-size:12px;cursor:pointer}
+.wbTitleReplay:disabled{opacity:.5;cursor:default}
+.wbTitleReplay:focus-visible{outline:2px solid var(--dsw-alias-link);outline-offset:2px}
+@media(max-width:680px){.wbAppearanceArtwork{height:81px;padding-right:140px;flex-direction:column;align-items:flex-start;justify-content:center;gap:7px}.wbAppearanceArtwork>.wb-art-silver-sleepy{width:125px;top:4px;height:75px}.wbAppearanceArtwork>[data-workbench-title]{font-size:12px}.wbTitleReplay{font-size:11px;white-space:nowrap}.wbArtworkLibraryGrid{gap:14px 10px}.wbArtworkLibraryGrid .wb-art-lettering{display:none}}
+
+
+.wbHeroArtworkSelect{height:28px;max-width:240px;border:1px solid var(--dsw-alias-border-l2);border-radius:7px;background:var(--dsw-alias-bg-layer-1);color:var(--dsw-alias-label-primary);font:inherit;font-size:11px;padding:0 7px}
+

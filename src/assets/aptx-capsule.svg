@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>APTX · 胶囊标志</title>
+  <g transform="rotate(40 32 32)">
+    <rect x="19" y="8" width="26" height="48" rx="13" stroke="#493354" stroke-width="4"/>
+    <path d="M19 33h26v10a13 13 0 0 1-26 0V33Z" fill="#493354"/>
+    <path d="M25 21a7 7 0 0 1 7-7" stroke="#493354" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

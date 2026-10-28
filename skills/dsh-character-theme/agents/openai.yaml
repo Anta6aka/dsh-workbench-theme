@@ -1,0 +1,4 @@
+interface:
+  display_name: "DSH 角色主题制作"
+  short_description: "把角色视觉转成可安装的 DSH 明暗主题，包含素材、字标、外观设置和验证。"
+  default_prompt: "使用 $dsh-character-theme 为我指定的角色制作一个独立的 DeepSeek Harness 主题，并提供预览与验证结果。"

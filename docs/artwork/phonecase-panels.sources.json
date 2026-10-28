@@ -1,0 +1,58 @@
+{
+  "source": "User-provided IMG_1338.HEIC, existing JPEG conversion dsh-phonecase-reference-1338.jpg",
+  "source_jpeg_sha256": "86acabfd77a4745e0780942c2904841c7a48d6e3c5af1036a5a55376d7e07b80",
+  "oriented_source_dimensions": [
+    3024,
+    4032
+  ],
+  "reference_dimensions": [
+    1368,
+    1824
+  ],
+  "operations": "EXIF orientation, rectangular crop, proportional downsample, JPEG encoding; no generated illustration or expression edits. Color-to-silver treatment is CSS only.",
+  "local_use": "User authorized reuse in current local theme; original depicted artwork remains rights-holder material, not MIT/openly licensed.",
+  "panels": [
+    {
+      "file": "phonecase-panel-observe.jpg",
+      "selection_at_reference": [
+        328,
+        796,
+        677,
+        1215
+      ],
+      "crop_in_oriented_source": [
+        725,
+        1760,
+        1497,
+        2686
+      ],
+      "output_dimensions": [
+        500,
+        600
+      ],
+      "bytes": 65847,
+      "sha256": "07d790b20b831468e987fba552424d3583ed1568cd7a075c06a37e0cd36a62cd"
+    },
+    {
+      "file": "phonecase-panel-gesture.jpg",
+      "selection_at_reference": [
+        275,
+        1298,
+        791,
+        1755
+      ],
+      "crop_in_oriented_source": [
+        608,
+        2869,
+        1749,
+        3879
+      ],
+      "output_dimensions": [
+        600,
+        531
+      ],
+      "bytes": 60731,
+      "sha256": "d0c25231b862211a15cb79ce2d839884ee4f84e412e618af5308aec73f7d39af"
+    }
+  ]
+}

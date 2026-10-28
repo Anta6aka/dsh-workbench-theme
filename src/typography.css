@@ -1,0 +1,66 @@
+/* Role values belong to this Haibara composition, not a global type ramp.
+   Official rc.2 / Shell 1.11 / Office 1.1.1 chrome only; editor content keeps its owner. */
+body[data-workbench-theme] {
+  --wb-type-brand-family: "Workbench Display Serif", "Songti SC", STSong, serif;
+  --wb-type-accent-family: "Workbench Signature", Baskerville, "Times New Roman", serif;
+  --wb-type-ui-family: var(--dsw-font-family, system-ui);
+  --wb-type-brand-size: 30px;
+  --wb-type-brand-leading: 1.32;
+  --wb-type-brand-weight: 600;
+  --wb-type-signature-size: 28px;
+  --wb-type-signature-leading: 1.15;
+  --wb-type-metadata-size: 12px;
+}
+body[data-workbench-theme] .wbBrandWordmark {
+  font-family: var(--wb-type-brand-family);
+  font-size: var(--wb-type-brand-size);
+  font-weight: var(--wb-type-brand-weight);
+  line-height: var(--wb-type-brand-leading);
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+body[data-workbench-theme] :is(.wbBrandName,.wbBrandTask) { letter-spacing: .01em }
+body[data-workbench-theme] .wbBrandJoin { font-size: .76em }
+body[data-workbench-theme] .wbBrandAI {
+  font-family: var(--wb-type-accent-family);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.35em;
+  line-height: 1;
+  letter-spacing: -.025em;
+  vertical-align: -.025em;
+  color: var(--wb-signature-ink);
+}
+body[data-workbench-theme] .wbHomeArtwork .wb-art-lettering[data-workbench-title] {
+  font-family: var(--wb-type-accent-family);
+  font-style: italic;
+  font-weight: 600;
+  font-synthesis: none;
+  font-size: var(--wb-type-signature-size);
+  line-height: var(--wb-type-signature-leading);
+  letter-spacing: 0;
+}
+/* The native workspace tree has version-scoped, verified role/class hooks. */
+body[data-workbench-theme] [data-slot=sidebar] [class*='_projectRow'] [class*='_title'] {
+  font-family: var(--wb-type-ui-family);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .01em;
+}
+body[data-workbench-theme] [data-slot=sidebar] [aria-selected=true] [class*='_title'] { font-weight: 600 }
+body[data-workbench-theme] [data-slot=sidebar] [class*='_time'] {
+  font-size: var(--wb-type-metadata-size);
+  line-height: 18px;
+  font-variant-numeric: tabular-nums;
+}
+/* Office chrome: selected names and metadata, never canvas or document styles. */
+body[data-workbench-theme] [data-office-workbench] [role=treeitem][aria-selected=true] [class*='_treeName'],
+body[data-workbench-theme] [data-office-workbench] [role=tab][aria-selected=true] > span { font-weight: 600 }
+@media(max-width:680px) {
+  body[data-workbench-theme] .wbBrandWordmark { --wb-type-brand-size: clamp(19px,5.4vw,21px); line-height: 1.5 }
+  body[data-workbench-theme] .wbBrandWordmark:lang(en) { --wb-type-brand-size: clamp(16px,4.8vw,21px); letter-spacing: 0 }
+  body[data-workbench-theme] .wbHomeArtwork .wb-art-lettering[data-workbench-title] { font-size: clamp(20px,6.4vw,25px) }
+}
+@media(max-height:620px) {
+  body[data-workbench-theme] .wbHomeArtwork .wb-art-lettering[data-workbench-title] { line-height: 1.1 }
+}

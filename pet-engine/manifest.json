@@ -1,0 +1,105 @@
+{
+  "name": "灰原哀",
+  "size": 360,
+  "idle": "点头",
+  "clicks": [
+    "摸头",
+    "碰鼻"
+  ],
+  "groups": [
+    {
+      "id": "小哀日常",
+      "actions": [
+        "喝茶",
+        "品茶",
+        "吃爆米花",
+        "工作小睡",
+        "睡觉",
+        "吹风扇",
+        "一切都好"
+      ]
+    },
+    {
+      "id": "小哀开心",
+      "actions": [
+        "摸头",
+        "碰鼻",
+        "庆祝",
+        "玫瑰",
+        "收红包",
+        "蛋糕"
+      ]
+    },
+    {
+      "id": "小哀好奇",
+      "actions": [
+        "问号",
+        "听音乐",
+        "点头"
+      ]
+    },
+    {
+      "id": "小哀彩蛋",
+      "actions": [
+        "猫耳碰鼻",
+        "笑"
+      ]
+    }
+  ],
+  "animations": [
+    "一切都好",
+    "吃爆米花",
+    "听音乐",
+    "吹风扇",
+    "品茶",
+    "喝茶",
+    "工作小睡",
+    "庆祝",
+    "摸头",
+    "收红包",
+    "点头",
+    "猫耳碰鼻",
+    "玫瑰",
+    "睡觉",
+    "碰鼻",
+    "笑",
+    "蛋糕",
+    "问号"
+  ],
+  "drag": "悬空轻摆",
+  "contexts": {
+    "task_complete": "庆祝",
+    "code_success": "庆祝",
+    "praise": "摸头",
+    "praise_headpat": "摸头",
+    "poke_cheek": "碰鼻",
+    "affection": "玫瑰",
+    "reward": "收红包",
+    "celebration": "蛋糕",
+    "coding": "一切都好",
+    "tool_running": "一切都好",
+    "long_thinking": "工作小睡",
+    "no_task_long": "睡觉",
+    "idle": "点头",
+    "question": "问号",
+    "error": "问号",
+    "waiting": "喝茶",
+    "voice_generating": "品茶",
+    "relax": "听音乐",
+    "watching": "吃爆米花",
+    "hot": "吹风扇",
+    "small_talk": "碰鼻",
+    "easter_egg": "笑",
+    "side_left": "探头-左",
+    "side_right": "探头-右",
+    "fallback": "点头",
+    "startup": "喝茶",
+    "chat": "碰鼻"
+  },
+  "easterEggs": [
+    "猫耳碰鼻",
+    "笑"
+  ],
+  "easterEggChance": 0.18,
+  "easterEggPity": 5
+}
